@@ -1,42 +1,45 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@font-face {
+    font-family: Signaute;
+    src: url(../fonts/RetroSignature.woff);
+}
 
 *{
     box-sizing: border-box;
-    font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.space{
-    display: flex;
-    justify-content: space-around;
-}
 /*Header*/
 header{
-    height: 70px;
-    background: rgba(0, 0, 0, 0.952);
+    background: rgba(0, 0, 0, 0.904);
 }
-header h1{
-    line-height: 70px;
+#titulo-Header{
+    margin: 0 0 0 50px;
+    font-size: 35pt;
     color: white;
-    font-family: 'Gelasio', serif;
+    font-family: 'Playfair Display', serif;
 }
-header h1:hover{
+#titulo-Header:hover{
     transition: 1s;
     cursor: pointer;
     color: #00FFD1;
 }
-a{
-    line-height: 70px;
-    padding: 25px;
-    color: white;
-    font-size: 1.1rem;
+ul{
+    margin-left: auto;
+    margin-right: 10%;
 }
-a:hover{
+.link-Header{
+    padding: 30px 0 30px 0;
+    margin: 10px 15px 10px 15px; 
+    color: white;
+    font-size: 1.2rem;
+}
+.link-Header:hover{ 
     text-decoration: none;
-    transition: 1.3s;
+    transition: 1.2s;
     color: #00FFD1;
 }
 #person-ico{margin-right: 5px;}
@@ -44,10 +47,8 @@ a:hover{
 #divisor{
     background-color: white;
     padding: 1px;
-    width: 1px;
-    height: 30px;
-    margin-top: 20px;
 }
+
 #container{
     background: url("../images/fundo.png") no-repeat center;
     height: 680px;
@@ -66,9 +67,8 @@ a:hover{
     color: white;
 }
 #text-abertura h1{
-    font-weight: 400;
-    line-height: 74px;
-    font-size: 64px;
+    font-weight: 600;
+    font-size: 50pt;
 }
 #buton{
     border-radius: 15px;
@@ -87,7 +87,6 @@ a:hover{
     background-color: #1FA37F;
     color: white;
 }
-
 #seta{
     font-size: 1.5em;
     padding: 10px;
@@ -100,6 +99,8 @@ a:hover{
     flex-wrap: wrap;
     margin: 50px 0;
 }
+
+/*Demonstração de gêneros musicais*/
 .cards{
     display: flex;
     flex-direction: column;
@@ -141,10 +142,62 @@ a:hover{
     text-align: center;
     margin: 10px;
 }
+/*Rodape*/
+footer{
+    background-color: #262626;
+}
+
+#titulo-Footer{
+    font-size: 40pt;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+#titulo-Footer:hover{
+    transition: 1.2s;
+    cursor: pointer;
+    color: #00FFD1;
+}
+#marca-Redes{
+    display: flex;
+    justify-content: space-around;
+}
+#redes{
+    margin: 20px;
+}
+#redes img{
+    margin: 5px;
+}
+#assinatura{
+    font-family: Signaute;
+    color: #A6A6A6;
+    font-size: 45pt;
+}
+#assinatura::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    display: block;
+    background-color: #A6A6A6;
+    margin: auto;
+}
+#assinatura-Direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A6A6A6;
+}
 
 
-@media (max-width: 1070px){
-
+@media (max-width: 1000px){
+    li{
+        margin-top: 20px;
+    }
+    .link-Header{
+        padding: 0;
+    }
+    #divisor{
+        display: none;
+    }
     #container{
         height: 570px;
         background-image: url("../images/banner.jpg");
@@ -155,5 +208,39 @@ a:hover{
     }
     #text-abertura{
         margin: 0;
+    }
+}
+
+@media(max-width: 600px){
+    #text-abertura{
+        width: 350px;
+        align-items: center;
+        margin: 0;
+    }
+    #text-abertura h1{
+        font-size: 35pt;
+    }
+    #buton{
+        width: 280px;
+    }
+    #titulo-Footer, #assinatura{
+        font-size: 30pt;
+    }
+}
+
+@media(max-width: 400px){
+    #text-abertura{
+        width: 300px;
+    }
+    #text-abertura h1{
+        font-size: 30pt;
+        width: 300px;
+    }
+    #titulo-Header{
+        margin: 0;
+    }
+    #marca-Redes{
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -5,51 +5,67 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/icons/css/open-iconic-bootstrap.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
         <title>Zexer</title>
+
     </head>
 
     <body>
-        <header class="space sticky-top">
-            <h1>
-                <span class="oi oi-audio"></span>
-                Zexer
-            </h1>
-            <nav>
-                <ul class="space">
-                    <li>
-                        <a href="assets/pages/premium.html">Premium</a> 
-                    </li>
-                    <li>
-                        <a href="#">Suporte</a> 
-                    </li>
-                    <li id="divisor"></li>
-                    <li>
-                        <a href="assets/pages/cadastro.html">Cadastre-se</a> 
-                    </li>
-                    <li>
-                        <a href="assets/pages/login.html">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <h1 id="titulo-Header" class="navbar-brand">
+                    <span class="oi oi-audio"></span>
+                    Zexer
+                </h1>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#SupportedContent">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="SupportedContent">
+                    <ul class="navbar-nav" id="ul">
+                        <li class="nav-item">
+                        <a href="assets/pages/premium.html" class="link-Header">Premium</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a href="#" class="link-Header">Suporte</a>
+                        </li>
+
+                        <li>
+                        <span id="divisor"></span>
+                        </li>
+
+                        <li class="nav-item">
+                        <a href="assets/pages/cadastro.html" class="link-Header">Inscrever-se</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a href="assets/pages/login.html" class="link-Header">
                             <span class="oi oi-person" id="person-ico"></span>
                             Entrar
-                        </a> 
-                    </li>
-                </ul>
-            </nav>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </nav>
         </header>
         <section id="container">
             <section id="area-cap" >
                 <div>
                     <div id="text-abertura">
                         <h1>
-                            <strong> Esculte milhões de músicas e podcasts de graça.</strong>
+                            Esculte milhões de músicas e podcasts de graça.
                         </h1>
-                        <button class="btn btn-light over" id="buton">OBTENHA O ZEXER FREE</button>
+                        <a href="https://www.spotify.com/br/download/windows/" target="_blank"><button class="btn btn-light over" id="buton">OBTENHA O ZEXER FREE</button></a>
                     </div>
                 </div>
             </section>
-            <div class="d-flex justify-content-center"><span class="oi oi-chevron-bottom rounded-circle" id="seta"></span></div>
+            <div class="d-flex justify-content-center">
+                <span class="oi oi-chevron-bottom rounded-circle" id="seta"></span>
+            </div>
         </section>
         <section >
             <h1 class="mt-5 text-center"> <strong> Por que escolher o Zexer? </strong></h1>
@@ -143,15 +159,33 @@
                 </div>
             </div>
         </section>
-        
-
-
-
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+        <footer>
+            <div id="marca-Redes">
+                <h1 id="titulo-Footer" class="text-Hover">
+                    <span class="oi oi-audio"></span>
+                    Zexer
+                </h1>
+                <div id="redes">
+                    <a href="">
+                        <img src="assets/icons/github_icon-48px.png" alt="Github"> 
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/linkedin_icon-48px.png" alt="Linkedin">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/insta_icon-48px.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div id="assinatura-Direito">
+                <h1 id="assinatura" class="text-Hover">Ronaldo Vieira</h1>
+                <h6>&copy; 2021 Ronaldo Vieira.</h6>
+            </div>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
