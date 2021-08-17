@@ -5,13 +5,14 @@
     font-family: Signaute;
     src: url(../fonts/RetroSignature.woff);
 }
-
+/*Configurações gerais*/
 *{
     box-sizing: border-box;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 /*Header*/
 header{
     background: rgba(0, 0, 0, 0.904);
@@ -49,6 +50,7 @@ ul{
     padding: 1px;
 }
 
+/*Área de boas vindas!*/
 #container{
     background: url("../images/fundo.png") no-repeat center;
     height: 680px;
@@ -63,7 +65,7 @@ ul{
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-right: 100px;
+    margin-right: 50px;
     color: white;
 }
 #text-abertura h1{
