@@ -47,7 +47,7 @@ ul{
 
 #divisor{
     background-color: white;
-    padding: 1px;
+    width: 1px;
 }
 
 /*Área de boas vindas!*/
@@ -146,7 +146,8 @@ ul{
 }
 /*Rodape*/
 footer{
-    background-color: #262626;
+    /*background-color: #262626;*/
+    background: rgb(0, 0, 0);
 }
 
 #titulo-Footer{

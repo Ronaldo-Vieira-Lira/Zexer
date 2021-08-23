@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/singup.css">
+        <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../icons/css/open-iconic-bootstrap.min.css">
+        <title>Inscrever-se | Zexer</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <span class="oi oi-audio"></span>
+                <h1>Zexer</h1>
+            </div>
+            <h4>Inscreva-se grátis e comece a curtir.</h4>
+        </header>
+        <section>
+            <form action="login.html" method="POST">
+
+                <label for="email">
+                    Qual é o seu e-mail?
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail.">
+                </label>
+
+                <label for="conf-Senha">
+                    Crie uma senha
+                    <input type="password" placeholder="Crie uma senha.">
+                </label>
+
+                <label for="corf-Senha">
+                    Confirme sua senha
+                    <input type="password" placeholder="Crie uma senha.">
+                </label>
+
+                <label for="nome">
+                    Qual é o seu nome?
+                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome.">
+                </label>
+
+                <fieldset>
+
+                    <label for="dia">
+                        Dia
+                        <input type="number" name="" id="" placeholder="DD">
+                    </label>
+
+                    <label for="mes">
+                        Mês 
+                        <select name="mes" id="">
+                            <option></option>
+                            <option value="">Janeiro</option>
+                            <option value="">Fevereiro</option>
+                            <option value="">Março</option>
+                            <option value="">Abril</option>
+                            <option value="">Maio</option>
+                            <option value="">Junho</option>
+                            <option value="">Julho</option>
+                            <option value="">Agosto</option>
+                            <option value="">Setembro</option>
+                            <option value="">Outubro</option>
+                            <option value="">Novembro</option>
+                            <option value="">Dezembro</option>
+                        </select>
+                    </label>
+
+                    <label for="ano">
+                        Ano 
+                        <input type="number" name="ano" id="ano" placeholder="AAAA">
+                    </label>
+
+                </fieldset>
+                
+                <fieldset>
+                    Qual é o seu gênero?
+                    <input type="radio" name="genero" id="genero">Masculino
+                    <input type="radio" name="genero" id="genero">Feminio
+                    <input type="radio" name="genero" id="genero"> Não binário
+                </fieldset>
+                <fieldset>
+                    <label for="">
+                        <input type="checkbox" name="" id="">
+                        Desejo receber mensagens de marketing do Zexer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" id="">
+                        Compartilhar meus dados cadastrais com os provedores de conteúdo co Zexer para fins de marketing.
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="" id="">
+                        Eu concordo com os <a href="">Termos e Condições de Uso do Zexer.</a>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Inscrever-se">
+
+            </form>
+            <h6>Já tem uma conta? <a href="login.html">Faça login.</a></h6>
+        </section>
+    </body>
+</html>
