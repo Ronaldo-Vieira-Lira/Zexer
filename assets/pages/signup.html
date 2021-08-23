@@ -5,99 +5,119 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/singup.css">
+        <link rel="stylesheet" href="../css/signup.css">
         <link rel="shortcut icon" href="../icons/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="../icons/css/open-iconic-bootstrap.min.css">
         <title>Inscrever-se | Zexer</title>
     </head>
     <body>
         <header>
-            <div>
-                <span class="oi oi-audio"></span>
+            <div id="area_Marca">
+                <span class="oi oi-audio" id="marca"></span>
                 <h1>Zexer</h1>
             </div>
-            <h4>Inscreva-se grátis e comece a curtir.</h4>
         </header>
-        <section>
+        <div id="descricao">
+            <h4>Inscreva-se grátis e comece a curtir.</h4>
+        </div>
+        <section id="container">
             <form action="login.html" method="POST">
 
-                <label for="email">
-                    Qual é o seu e-mail?
-                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail.">
-                </label>
+                <fieldset id="usuario">
 
-                <label for="conf-Senha">
-                    Crie uma senha
-                    <input type="password" placeholder="Crie uma senha.">
-                </label>
-
-                <label for="corf-Senha">
-                    Confirme sua senha
-                    <input type="password" placeholder="Crie uma senha.">
-                </label>
-
-                <label for="nome">
-                    Qual é o seu nome?
-                    <input type="text" name="nome" id="nome" placeholder="Insira seu nome.">
-                </label>
-
-                <fieldset>
-
-                    <label for="dia">
-                        Dia
-                        <input type="number" name="" id="" placeholder="DD">
+                    <label for="email">
+                        Qual é o seu e-mail?
+                        <input type="email" name="email" placeholder="Insira seu e-mail." required class="formatacao">
+                    </label>
+                    
+                    <label for="senha">
+                        Crie uma senha
+                        <input type="password" name="senha" placeholder="Crie uma senha." required class="formatacao">
+                    </label>
+                    
+                    <label for="confimacao_Senha">
+                        Confirme sua senha
+                        <input type="password" name="confirmacao_Senha" placeholder="Crie uma senha." required class="formatacao">
+                    </label>
+                    
+                    <label for="nome">
+                        Qual é o seu nome?
+                        <input type="text" name="nome" placeholder="Insira seu nome." required class="formatacao">
                     </label>
 
-                    <label for="mes">
+                </fieldset>
+                    
+                <fieldset id="nascimento" class="d-flex mt-4">
+
+                    <legend> Qual sua data de nascimento?</legend>
+
+                    <label for="dia" class="m-0">
+                        Dia
+                        <input type="number" name="dia" id="dia" placeholder="DD" required class="formatacao">
+                    </label>
+
+                    <label for="mes" class="m-0">
                         Mês 
-                        <select name="mes" id="">
+                        <select name="mes" class="formatacao" required>
                             <option></option>
-                            <option value="">Janeiro</option>
-                            <option value="">Fevereiro</option>
-                            <option value="">Março</option>
-                            <option value="">Abril</option>
-                            <option value="">Maio</option>
-                            <option value="">Junho</option>
-                            <option value="">Julho</option>
-                            <option value="">Agosto</option>
-                            <option value="">Setembro</option>
-                            <option value="">Outubro</option>
-                            <option value="">Novembro</option>
-                            <option value="">Dezembro</option>
+                            <option value="janeiro">Janeiro</option>
+                            <option value="fevereiro">Fevereiro</option>
+                            <option value="março">Março</option>
+                            <option value="abril">Abril</option>
+                            <option value="maio">Maio</option>
+                            <option value="junho">Junho</option>
+                            <option value="julho">Julho</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="setembro">Setembro</option>
+                            <option value="outubro">Outubro</option>
+                            <option value="novembro">Novembro</option>
+                            <option value="dezembro">Dezembro</option>
                         </select>
                     </label>
 
-                    <label for="ano">
+                    <label for="ano" class="m-0">
                         Ano 
-                        <input type="number" name="ano" id="ano" placeholder="AAAA">
+                        <input type="number" name="ano" id="ano" placeholder="AAAA" required class="formatacao">
                     </label>
 
                 </fieldset>
                 
-                <fieldset>
-                    Qual é o seu gênero?
-                    <input type="radio" name="genero" id="genero">Masculino
-                    <input type="radio" name="genero" id="genero">Feminio
-                    <input type="radio" name="genero" id="genero"> Não binário
+                <fieldset class="d-flex mt-4" id="genero">
+                    <legend>Qual é o seu gênero?</legend>
+                    
+                    <label for="masculino">
+                        <input type="radio" name="genero" id="masculino"> 
+                        Masculino
+                    </label>
+                    <label for="feminino">
+                        <input type="radio" name="genero" id="feminino"> Feminio
+                    </label>
+                    <label for="binario">
+                        <input type="radio" name="genero" id="binario"> Não binário
+                    </label>                    
                 </fieldset>
-                <fieldset>
-                    <label for="">
-                        <input type="checkbox" name="" id="">
+
+                <fieldset id="permicoes">
+
+                    <label for="mensagens">
+                        <input type="checkbox" name="mensagens" id="mensagens">
                         Desejo receber mensagens de marketing do Zexer
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="" id="">
+                    <label for="compartilhar">
+                        <input type="checkbox" name="compartilhar" id="compartilhar">
                         Compartilhar meus dados cadastrais com os provedores de conteúdo co Zexer para fins de marketing.
                     </label>
-                    <label for="">
-                        <input type="checkbox" name="" id="">
+                    <label for="termos">
+                        <input type="checkbox" name="termos" id="termos" required> 
                         Eu concordo com os <a href="">Termos e Condições de Uso do Zexer.</a>
                     </label>
+
                 </fieldset>
-                <input type="submit" value="Inscrever-se">
+
+                <input type="submit" value="Inscrever-se" id="buton">
 
             </form>
-            <h6>Já tem uma conta? <a href="login.html">Faça login.</a></h6>
+            <h6 id="login">Já tem uma conta? <a href="login.html">Faça login.</a></h6>
         </section>
     </body>
 </html>

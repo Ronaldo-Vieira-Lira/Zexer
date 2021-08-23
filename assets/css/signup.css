@@ -1,1 +1,150 @@
+/*Fonte do titulo*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 
+/*Configurações gerais*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #0F8C3B;
+    text-decoration: underline;
+}
+a:hover{
+    color: #21E465;
+}
+
+/*Estilo do cabeçalho*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+#area_Marca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#area_Marca h1{
+    font-size: 2.5em;
+    margin: 10px 0 0 10px;
+    font-family: 'Playfair Display', serif;
+}
+#area_Marca h1{
+    text-shadow:0 0 3px white;
+}
+#marca{
+    font-size: 4.5em;
+}
+
+#descricao h4{
+    font-size: 2em;
+    margin: 50px 5px 30px 5px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.formatacao{
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 5px;
+    padding: 10px;
+}
+.formatacao:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px #68ADE8;
+}
+/*Remoção das setas do input[button]*/
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+#usuario label, #nascimento label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#nascimento{
+    justify-content: space-between;
+}
+fieldset legend{
+    font-size: 1rem; 
+    font-weight: bold;
+}
+#nascimento input{
+    padding: 10px;
+    width: 100px;
+}
+select{
+    padding: 10px;
+    width: 200px;
+}
+#genero{
+    margin-bottom: 25px;
+}
+#genero label, #permicoes {
+    display: inline;
+    margin-right: 20px;
+    font-weight: normal;
+}
+#permicoes label{
+    margin: 5px 0 25px 0;
+}
+#buton{
+    width: 300px;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #21E065;
+    margin: auto;
+}
+#buton:hover{
+    color: white;
+}
+#login{
+    margin: 20px 0 20px 0;
+}
+
+@media(max-width: 600px){
+    form{
+        width: 400px;
+    }
+    select{
+        width: auto;
+    }
+    #nascimento input{
+        width: 20vw;
+    }
+    #genero{
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 425px){
+    form{
+        width: 280px;
+    }
+    #buton{
+        width: 250px;
+    }
+
+}
