@@ -11,41 +11,60 @@
         <title>Login | Zexer</title>
     </head>
     <body>
+
         <header onclick="ir()">
-            <span class="oi oi-audio" id="marca" ></span>
+            <span class="oi oi-audio-spectrum" id="marca" ></span>
             <h1 id="titulo">Zexer</h1>
         </header>
-        <section id="area_Login">
+
+        <section id="area-Login">
+
             <div id="container">
+
                 <h6>Para continuar, faça login no Zexer.</h6>
+
                 <form action="">
+
                     <label for="email">
                         Endereço de e-mail <br>
                         <input class="form-control largura" type="email" name="email" id="email" placeholder="Endereço de e-mail" required>
                     </label>
+
                     <label for="senha">
                         Senha <br>
                         <input class="form-control largura" type="password" name="senha" id="senha" placeholder="Senha" required>
                     </label>
+
                     <br>
+
                     <div id="area" class="largura">
+
                         <p> <a href="#">Esqueceu a senha?</a> </p>
+
                         <div id="area-enter" class="largura">
+
                             <label for="">
                                 <input type="checkbox" name="lembrar" id="lembrar" > Lembrar de mim
                             </label>
                             <button class="btn ouver" id="enter">Entrar</button>
+
                         </div>
+
                     </div>
+
                 </form>
+
                 <h6>Não tem uma conta ?</h6>
                 <a href="signup.html"><button id="inscrever" class="btn largura ouve">INSCREVER-SE NO ZEXER</button></a>
+            
             </div>
         </section>
+
         <script>
             function ir(){
                 window.location.href = "/index.html";
             }
         </script>
+        
     </body>
 </html>

@@ -11,11 +11,9 @@
         <title>Inscrever-se | Zexer</title>
     </head>
     <body>
-        <header>
-            <div id="area_Marca">
-                <span class="oi oi-audio" id="marca"></span>
+        <header onclick="ir()">
+                <span class="oi oi-audio-spectrum" id="marca"></span>
                 <h1>Zexer</h1>
-            </div>
         </header>
         <div id="descricao">
             <h4>Inscreva-se grátis e comece a curtir.</h4>
@@ -119,5 +117,10 @@
             </form>
             <h6 id="login">Já tem uma conta? <a href="login.html">Faça login.</a></h6>
         </section>
+        <script>
+            function ir(){
+                window.location.href = "/index.html";
+            }
+        </script>
     </body>
 </html>

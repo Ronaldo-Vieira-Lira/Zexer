@@ -1,8 +1,7 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @font-face {
-    font-family: Signaute;
+    font-family: "Signaute";
     src: url(../fonts/RetroSignature.woff);
 }
 /*Configurações gerais*/
@@ -12,7 +11,6 @@
     margin: 0;
     padding: 0;
 }
-
 /*Header*/
 header{
     background: rgba(0, 0, 0, 0.904);
@@ -55,20 +53,20 @@ ul{
     background: url("../images/fundo.png") no-repeat center;
     height: 680px;
 }
-#area-cap{
+#area-Capa{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 655px;
 }
-#text-abertura{
+#text-Abertura{
     display: flex;
     flex-direction: column;
     width: 500px;
     margin-right: 50px;
     color: white;
 }
-#text-abertura h1{
+#text-Abertura h1{
     font-weight: 600;
     font-size: 50pt;
 }
@@ -94,6 +92,9 @@ ul{
     padding: 10px;
     background-color: white;
     box-shadow: 0 0 5px black;   
+}
+.negrito {
+    font-weight: 700;
 }
 #escolha{
     display: flex;
@@ -140,7 +141,7 @@ ul{
     flex-wrap: wrap;
     margin: 100px 0 80px 0;
 }
-.genero-item{
+.genero-Item{
     text-align: center;
     margin: 10px;
 }
@@ -163,6 +164,7 @@ footer{
 #marca-Redes{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 #redes{
     margin: 20px;
@@ -171,7 +173,7 @@ footer{
     margin: 5px;
 }
 #assinatura{
-    font-family: Signaute;
+    font-family: "Signaute";
     color: #A6A6A6;
     font-size: 45pt;
 }
@@ -191,9 +193,9 @@ footer{
 }
 
 
-@media (max-width: 1000px){
-    li{
-        margin-top: 20px;
+@media (max-width: 768px){
+    .nav-item {
+        margin:  10px 0 20px 0;
     }
     .link-Header{
         padding: 0;
@@ -205,45 +207,32 @@ footer{
         height: 570px;
         background-image: url("../images/banner.jpg");
     }
-    #area-cap{
+    #area-Capa{
         justify-content: center;
         height: 550px;
     }
-    #text-abertura{
+    #text-Abertura{
         margin: 0;
-    }
-}
-
-@media(max-width: 600px){
-    #text-abertura{
-        width: 350px;
-        align-items: center;
-        margin: 0;
-    }
-    #text-abertura h1{
-        font-size: 35pt;
     }
     #buton{
         width: 280px;
     }
-    #titulo-Footer, #assinatura{
-        font-size: 30pt;
-    }
 }
 
-@media(max-width: 400px){
-    #text-abertura{
+
+@media(max-width: 425px){
+    #text-Abertura{
         width: 300px;
     }
-    #text-abertura h1{
+    #text-Abertura h1{
         font-size: 30pt;
         width: 300px;
     }
     #titulo-Header{
         margin: 0;
     }
-    #marca-Redes{
-        flex-direction: column;
-        align-items: center;
+    #titulo-Footer {
+        padding: 5px;
+        font-size: 25pt;
     }
 }
