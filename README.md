@@ -6,6 +6,5 @@ Zexer novo serviço de streaming, totalmente pensando e desenvolvido para os ama
 
 ![Tela principal](/readme-img/zexer.jpg)
 
-![Motivos](/readme-img/zexer-motivo.jpg)
+![Motivos](/readme-img/zexer-escolha.jpg)
 
-> Em fase de **DESENVOLVIMENTO**.

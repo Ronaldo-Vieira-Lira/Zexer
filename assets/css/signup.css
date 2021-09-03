@@ -21,7 +21,7 @@ header{
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.973);
     color: white;
     cursor: pointer;
 }
